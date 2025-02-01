@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =8
+let g:netrw_dirhist_8='/home/yacineabed/.config/flitter-timer'
+let g:netrw_dirhist_7='/home/yacineabed'
+let g:netrw_dirhist_6='/home/yacineabed/Documents'
+let g:netrw_dirhist_5='/home/yacineabed/Documents/c_prac'
+let g:netrw_dirhist_4='/home/yacineabed/Documents'
+let g:netrw_dirhist_3='/home/yacineabed'
+let g:netrw_dirhist_2='/home/yacineabed/Documents/github/Dotfiles/.git'
+let g:netrw_dirhist_1='/etc/X11/Xsession.d'
+let g:netrw_dirhist_0='/home/yacineabed/Documents/Obsidian Vault/Aug'
+let g:netrw_dirhist_9='/home/yacineabed/Documents/Obsidian Vault'

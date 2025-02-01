@@ -1,0 +1,4 @@
+sudo virch net-list --all
+
+sudo virsh net-start default
+

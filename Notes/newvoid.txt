@@ -1,0 +1,71 @@
+-sudo xbps-install xorg xinit
+IMPORTANT NOTE:
+for installing voidlinux on real hardware you have to install intel graphics driver for x server to work:
+sudo xbps-install xf86-video-intel
+then create the following directory with this config:
+/etc/X11/xorg.conf.d/20-intel.conf:
+Section "Device"
+   Identifier  "Intel Graphics"
+   Driver      "intel"
+EndSection
+
+
+-sudo xbps-install git make gcc autoconf 
+-sudo xbps-install pulseaudio network-manager-applet volumeicon
+-sudo xbps-install i3 [i3blocks i3status] i3lock [rofi dmenu] unzip feh xfe vim [st xfce4-terminal] udiskie  [qutebrowser badwolf firefox-esr] 
+
+dwm:
+sudo xbps-install base-devel libX11-devel libXft-devel libXinerama-devel freetype-devel fontconfig-devel
+git clone https://git.suckless.org/dwm
+cd dwm/
+sudo make clean install
+
+
+
+-add to bash_profile:
+if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then 
+	exec startx;
+fi
+
+-and in xinitrc:
+xrandr --output Virtual-1 --mode 1366x768 &
+# try also to delete pulseaudio config in ~/.config/pulse/
+pulseaudio --daemonize=no --exit-idle-time=-1 &
+udiskie &
+feh --bg-fill path/to/your/wallpaper.png &
+exec i3
+
+
+configuring NetworkManager (mainly useful on real hardware):
+install network-manager-applet:
+-sudo xbps-install network-manager-applet
+first thing is making sure that we have dubs service up and running:
+check if dbus is in /var/service, if it's there then check if it's running: sudo sv status dbus, start it if not: sudo sv start dbus.
+but if dbus is not in /var/service we can link it:
+-sudo ln -s /etc/sv/dbus /var/service. and then start it.
+then we need to turn off dhcpcd from service (/var/service/dhcpcd):
+-sudo sv down /var/service/dhcpcd
+after that, we can go and remove the service:
+-sudo rm /var/service/dhcpcd
+now, let's go and and netowrk manager as a service:
+-sudo ln -s /etc/sv/NetworkManager /var/service
+
+then run network-manager-applet for gui?
+also mybde add it to xinitrc?:
+network-manager-applet & 
+...
+
+
+watching youtube:
+install yewtube and mpv
+-sudo xbps-install mpv python3-pip
+-sudo xbps-install yewtube
+then open it with terminal: yt
+
+
+thinks to do after installation:
+-how to add feh to xinitrc for desktop wallpaper
+-[xpdf evince] for reading
+-udiskie for removable media gui
+-pfetch
+-getting udiskie to work on real hardware

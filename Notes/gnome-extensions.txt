@@ -1,0 +1,21 @@
+gnome extensions:
+Appindicator and KStatusNotifierItem Support
+Bluetooth Battery Meter
+Clipboard Indicator
+Dynamic Panel Transparency
+Gnome 4x UI Improvements
+Impatience
+Just Perfection
+Launch new instance
+OpenWeather
+Places Status Indicator
+Quick Settings Audio Panel
+Reminder Alarm Clock
+Running Apps List
+Show Desktop Applet
+Space Bar
+Thinkpad Battery Threshold
+Unite
+User Themes
+V-Shell (Vertical Workspaces)
+Window List

@@ -1,0 +1,12 @@
+debian-stable-i3 installation:
+-installing i3, i3blocks, lightdm(Display manager):
+sudo apt install i3 i3blocks lightdm x11-xserver-utils pulseaudio nm-tray
+
+-installing curl, git, gnupg(vim-addon), feh(image viwer) and vim:
+sudo apt install curl git gnupg feh vim
+
+-installing firefox, xfe(file manager) and xfe-themes:
+sudo apt install firefox-esr xfe xfe-themes
+
+-finally restarting the os:
+sudo reboot

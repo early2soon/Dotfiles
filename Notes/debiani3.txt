@@ -1,0 +1,32 @@
+*the steps of installing minimal debian-i3 (no DE)for productivity:
+-for installing minimal debian-i3 see "./Documents/debian-stable-i3 installation.txt"
+
+-For changing the resolution get to lightdm config in "/etc/lightdm/lightdm.conf" and add the following line after [Seat:*], so it should be:
+[Seat:*]
+display-setup-script=xrandr -s 1360x768
+
+-Install terminal of your choice:
+for example: sudo apt install xfce4-terminal
+-Install gcc:
+sudo apt install gcc
+-Install gnu make and other essentials:
+sudo apt-get install build-essential
+-Install network manager (NetworkManager):
+sudo apt install network-manager
+-Minimal i3wm config (~./.config/i3/config) will be uploaded later on Github
+-Minimal vimrc config (~./.vimrc) will also be uploaded on Github
+-Install vim-gtk3 for enabling global clipboarding in vim:
+sudo apt-get install vim-gtk3 -y
+
+-if you want to add a vim configuration command in vimrc without erasing the deafult configuration simply put this at the start of your vimrc:
+runtime defaults.vim
+
+-new cli based file manager that works well with vim: ranger
+sudo apt install ranger
+
+-Install power-manager software (xfce4-power-manager or TLP) and add auto startup command at boot in i3 config
+
+
+
+instrsting stuff to install:
+-pipes - terminal screen saver thing, nice to look at.

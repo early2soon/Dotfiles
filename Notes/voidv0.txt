@@ -1,0 +1,8 @@
+void linux:
+sudo xbps-install xorg xinit
+sudo xbps-install git make gcc autoconf
+sudo xbps-install networkmanager pulseaudio xfce4-terminal 
+sudo xbps-install i3 feh xfe vim w3m
+
+
+ if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then exec startx; fi 

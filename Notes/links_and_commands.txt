@@ -1,0 +1,6 @@
+M-x package-import-keyring
+
+sudo apt update -y && sudo apt full-upgrade -y && sudo apt autoremove -y && sudo apt clean -y && sudo apt autoclean -y
+
+luanch app with xwayland:
+env -u WAYLAND_DISPLAY xterm

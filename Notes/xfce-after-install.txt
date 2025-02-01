@@ -1,0 +1,27 @@
+xfce pnael plugins:
+https://docs.xfce.org/panel-plugins/start
+
+to install on new debian xfce:
+https://old.reddit.com/r/debian/comments/1d2xj98/i_just_got_a_fresh_install_of_debian_xfce_what_do/
+
+Synaptic
+package-update-indicator
+compton or picom
+blueman
+TLDR
+neofetch
+flitter
+qbittorent
+obsidian
+telegram
+vscodium
+keyd
+syncthing
+wine
+calibre
+mpv
+
+
+
+other:
+https://forums.debian.net/viewtopic.php?t=155919
