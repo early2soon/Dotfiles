@@ -11,21 +11,15 @@
 
 4. فتح Terminal في VSCode بعدها ثبت Nuxt js: 
    
-   ![](C:\Users\dwhyo\Pictures\Screenshots\Screenshot%202025-02-07%20151444.png)
+[Screenshot-2025-02-07-152641.png](https://postimg.cc/ygFZKWyQ)   
+
+`npm install`
    
-   `npm install`
-   
-   
-   
-   ![](C:\Users\dwhyo\AppData\Roaming\marktext\images\2025-02-07-15-21-39-image.png)
-   
-   
+[Screenshot-2025-02-07-152641.png](https://postimg.cc/ygFZKWyQ)   
 
 5.انشاء Local server:
 
 `npm run dev`
-
-
 
 ![](C:\Users\dwhyo\AppData\Roaming\marktext\images\2025-02-07-15-23-08-image.png)
 
